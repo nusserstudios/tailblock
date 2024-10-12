@@ -1,0 +1,14 @@
+alignfull
+alignwide
+alignnone
+aligncenter
+alignright
+wp-block-button
+wp-caption
+wp-caption-text
+max-w-screen-sm
+max-w-screen-md
+max-w-screen-lg
+max-w-screen-xl
+max-w-screen-2xl
+dark:prose-invert
