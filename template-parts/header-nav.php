@@ -3,13 +3,23 @@
 		<div class="px-6 py-6 lg:flex lg:justify-between lg:items-center md:px-0">
 			<div class="flex items-center justify-between">
 				<div class="flex items-center justify-between">
-					<?php if (has_custom_logo()) { ?>
-						<?php the_custom_logo(); ?>
-					<?php } else { ?>
-						<a href="<?php echo get_bloginfo('url'); ?>" class="text-lg font-extrabold uppercase">
-							<?php echo get_bloginfo('name'); ?>
-						</a>
-					<?php } ?>
+					<?php
+						if (has_custom_logo()) {
+							the_custom_logo();
+						} elseif (file_exists(get_template_directory() . '/img/logo.svg')) {
+							?>
+							<a href="<?php echo esc_url(home_url('/')); ?>" class="text-lg font-extrabold uppercase">
+								<img src="<?php echo esc_url(get_template_directory_uri() . '/img/logo.svg'); ?>" alt="<?php echo esc_attr(get_bloginfo('name')); ?>" class="w-full h-auto max-h-12">
+							</a>
+							<?php
+						} else {
+							?>
+							<a href="<?php echo esc_url(home_url('/')); ?>" class="text-lg font-extrabold uppercase">
+								<?php echo esc_html(get_bloginfo('name')); ?>
+							</a>
+							<?php
+						}
+					?>
 				</div>
 				<div class="order-3 lg:hidden">
 					<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
