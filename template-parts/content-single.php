@@ -4,7 +4,7 @@
 		<h1 class="mb-1 text-2xl font-extrabold leading-tight entry-title lg:text-5xl">
 			<?php the_title(); ?>
 		</h1>
-		<time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="text-lg text-gray-900 dark:text-gray-200"><?php echo get_the_date(); ?></time>
+		<time datetime="<?php echo get_the_date( 'c' ); ?>" itemprop="datePublished" class="text-lg text-neutral-900 dark:text-neutral-200"><?php echo get_the_date(); ?></time>
 	</header>
 
 	<div class="entry-content">

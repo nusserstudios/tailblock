@@ -9,7 +9,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'bg-white text-gray-950 antialiased dark:bg-slate-900 dark:text-gray-200' ); ?>>
+<body <?php body_class( 'bg-white text-neutral-950 antialiased dark:bg-neutral-950 dark:text-neutral-200' ); ?>>
 
 <?php do_action( 'tailpress_site_before' ); ?>
 

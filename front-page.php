@@ -29,14 +29,16 @@
                     <?php the_title(); ?>
                 </h1>
                 <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-                    <div class="relative px-3 py-1 text-sm leading-6 text-gray-400 rounded-full ring-1 ring-white/10 hover:ring-white/20">
-                        Announcing our next round of funding. <a href="#" class="font-semibold text-white"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                    <div class="relative px-4 py-1.5 text-sm leading-6 rounded-full text-neutral-300 ring-1 ring-white/10 hover:ring-white/20">
+                        Get version 1.0 on GitHub <a href="https://github.com/nusserstudios/tailblock" class="font-semibold text-white"><span class="absolute inset-0 ml-3" aria-hidden="true"></span>See More <span aria-hidden="true">&rarr;</span></a>
                     </div>
                 </div>
-                <p class="mt-6 text-lg leading-8 text-gray-300">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+                <p class="max-w-2xl mx-auto mt-6 text-lg leading-8 text-neutral-300">
+                    This is an opinionated starter fork of TailPress, with pagination, styled archives, blog, pages, nav dropdowns, and more.
+                </p>
                 <div class="flex items-center justify-center mt-10 gap-x-6">
-                    <a href="#" class="rounded-md bg-primary-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400">Get started</a>
-                    <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
+                    <a href="https://github.com/nusserstudios/tailblock" class="rounded-md bg-primary-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-400">View GitHub Repo</a>
+                    <a href="https://github.com/nusserstudios/tailblock" class="text-sm font-semibold leading-6 text-white">View Demo <span aria-hidden="true">→</span></a>
                 </div>
             </div>
         </div>

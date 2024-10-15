@@ -66,7 +66,7 @@ if ( post_password_required() ) {
 	comment_form(
 		array(
 			'class_submit'  => 'bg-primary text-white cursor-pointer rounded font-bold py-2 px-4',
-			'comment_field' => '<textarea id="comment" name="comment" class="w-full px-3 py-2 bg-gray-200" aria-required="true"></textarea>',
+			'comment_field' => '<textarea id="comment" name="comment" class="w-full px-3 py-2 bg-neutral-200" aria-required="true"></textarea>',
 		)
 	);
 	?>
