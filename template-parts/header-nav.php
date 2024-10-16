@@ -1,8 +1,8 @@
 <header id="masthead" class="bg-neutral-100 dark:bg-neutral-950 dark:text-neutral-50 text-neutral-950">
 	<div class="mx-auto max-w-7xl">
-		<div class="px-6 py-6 lg:flex lg:justify-between lg:items-center md:px-0">
+		<div class="flex px-6 py-6 lg:justify-between lg:items-center md:px-0">
 			<div class="flex items-center justify-between">
-				<div class="flex items-center justify-between">
+				<div class="flex items-center justify-between ml-4">
 					<?php
 						if (has_custom_logo()) {
 							the_custom_logo();
@@ -47,19 +47,19 @@
 						}
 					?>
 				</div>
-				<div class="order-3 lg:hidden">
-					<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
-						<svg viewBox="0 0 20 20" class="inline-block w-6 h-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<g stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
-								<g id="icon-shape">
-									<path d="M0,3 L20,3 L20,5 L0,5 L0,3 Z M0,9 L20,9 L20,11 L0,11 L0,9 Z M0,15 L20,15 L20,17 L0,17 L0,15 Z" id="Combined-Shape"></path>
-								</g>
-							</g>
-						</svg>
-					</a>
-				</div>
 			</div>
-			<div class="flex items-center justify-between ml-auto ">
+			<div class="order-3 my-auto ml-auto mr-4 lg:hidden">
+				<a href="" aria-label="Toggle navigation" id="primary-menu-toggle">
+					<svg viewBox="0 0 20 20" class="inline-block w-6 h-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g stroke="none" stroke-width="1" fill="currentColor" fill-rule="evenodd">
+							<g id="icon-shape">
+								<path d="M0,3 L20,3 L20,5 L0,5 L0,3 Z M0,9 L20,9 L20,11 L0,11 L0,9 Z M0,15 L20,15 L20,17 L0,17 L0,15 Z" id="Combined-Shape"></path>
+							</g>
+						</g>
+					</svg>
+				</a>
+			</div>
+			<div class="flex items-center justify-between mx-auto">
 					<?php
 					wp_nav_menu(
 						array(
@@ -73,7 +73,7 @@
 					);
 					?>
 			</div>
-			<div class="items-center justify-between hidden ml-auto md:flex">
+			<div class="flex items-center justify-between ml-auto">
 				<div class="flex items-center">
 					<a class="font-medium text-neutral-600 hs-dark-mode-active:hidden hs-dark-mode group hover:text-primary-500 dark:text-neutral-200 dark:hover:text-neutral-500" href="#!" data-hs-theme-click-value="dark">
 						<svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -86,9 +86,6 @@
 						</svg>
 					</a>
 				</div>
-				<div class="hidden lg:flex mt-9 md:mt-auto">
-					<a href="<?php echo get_bloginfo('url'); ?>/contact" class="text-white bg-pink-500 hover:bg-pink-600 focus:ring-4 focus:ring-pink-300 font-medium rounded-lg text-lg px-4 lg:px-5 py-2 lg:py-2.5 md:ml-6 dark:bg-pink-500 dark:hover:bg-pink-600 focus:outline-none dark:focus:ring-pink-700 font-bold">Contact</a>
-				</div>	
 			</div>			
 		</div>
 	</div>
